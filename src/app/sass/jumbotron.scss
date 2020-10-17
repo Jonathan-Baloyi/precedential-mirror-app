@@ -1,16 +1,38 @@
 
 section {
-  background-image: url('assets/maize-meal2.jpg') !important;
-  min-height: 50vh !important;
+  background-image: url('assets/tractor.gif') !important;
+  min-height: 70vh !important;
   background-size: cover !important;
+  background-position: center;
   background-repeat: no-repeat !important;
 }
 h2 {
-  color: #420000;
+  color: #420000 !important;
   font-family: 'Arial';
   text-align: center;
   font-weight: 800;
   margin: 1em;
+}
+
+.welcome-text {
+  color: white;
+  font-family: 'Arial';
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  // text-align: center;
+  font-weight: 800;
+  margin: 1em;
+  width: 400px;
+  display: flex !important;
+  justify-content: center !important;
+  padding:30px;
+}
+
+@media only screen and (max-width: $desktop-width) {
+  .welcome-text{
+    background-image: none;
+    color: #2376ae;
+    width: auto;
+  }
 }
 
 /**Form Styling**/

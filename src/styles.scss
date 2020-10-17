@@ -6,3 +6,10 @@
 @import 'app/sass/jumbotron.scss';
 @import 'app/sass/container.scss';
 @import 'app/sass/sliding-card.scss';
+
+@media only screen and (max-width: $mobile-width) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+}

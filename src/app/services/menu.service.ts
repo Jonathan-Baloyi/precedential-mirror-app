@@ -15,6 +15,14 @@ export class MenuService {
             isDisabled: false
         };
 
+        const servicesMenuItem: IMenu = {
+          name : 'Services',
+          link : '/service',
+          data: null,
+          isCurrent: false,
+          isDisabled: false
+      };
+
         const aboutMenuItem: IMenu = {
             name : 'About',
             link : '/about',
@@ -33,6 +41,7 @@ export class MenuService {
 
         const menuItems: IMenu[] = [];
         menuItems.push(homeMenuItem);
+        menuItems.push(servicesMenuItem);
         menuItems.push(aboutMenuItem);
         menuItems.push(contactMenuItem);
 
