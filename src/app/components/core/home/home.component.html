@@ -1,6 +1,7 @@
-<app-navbar [menuItems] = "menuItems"></app-navbar>
+<app-navbar [menuItems]="menuItems"></app-navbar>
 
 <app-container></app-container>
 
-<app-sliding-card></app-sliding-card>
+<app-sliding-card [autoRotate]="true" [autoRotateAfter]="5000" [autoRotateRight]="true" [images]="imagesUrl">
+</app-sliding-card>
 <app-footer></app-footer>

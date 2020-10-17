@@ -11,6 +11,8 @@ import { SlidingCardComponent } from './components/core/sliding-card/sliding-car
 import { MenuService } from './services/menu.service';
 import { FooterComponent } from './components/core/footer/footer.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,7 @@ import { FooterComponent } from './components/core/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [MenuService],
