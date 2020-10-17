@@ -1,13 +1,13 @@
 
 section {
   background-image: url('assets/tractor.gif') !important;
-  min-height: 70vh !important;
+  min-height: 60vh !important;
   background-size: cover !important;
   background-position: center;
   background-repeat: no-repeat !important;
 }
 h2 {
-  color: #420000 !important;
+  color: $navbar-bg-color !important;
   font-family: 'Arial';
   text-align: center;
   font-weight: 800;
@@ -30,7 +30,7 @@ h2 {
 @media only screen and (max-width: $desktop-width) {
   .welcome-text{
     background-image: none;
-    color: #2376ae;
+    color: $navbar-bg-color;
     width: auto;
   }
 }

@@ -9,12 +9,19 @@
   position: relative;
   overflow-x: hidden;
 }
+
 #grid {
  display: grid;
  height: 150;
  grid-template-columns: repeat(3, 1fr);
  grid-template-rows: 300px;
  grid-column-gap: 20px;
+}
+
+@media only screen and (max-width: $desktop-width) {
+  #grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .overlay-left {
@@ -96,6 +103,12 @@
    padding-bottom: 400px;
 }
 
+@media only screen and (max-width: $tablet-width) {
+  .image-cropper {
+    padding-bottom: 500px;
+  }
+}
+
 .image-cropper img {
    max-width: 100%;
    max-height: 100%;
@@ -105,7 +118,7 @@
 
 @media only screen and (max-width: $tablet-width) {
   .image-cropper img{
-    max-width: none;
-    max-height: none;
+    max-width: 200%;
+    max-height: 200%;
   }
 }

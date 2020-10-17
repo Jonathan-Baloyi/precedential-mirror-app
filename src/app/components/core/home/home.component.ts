@@ -14,7 +14,14 @@ export class HomeComponent implements OnInit {
   constructor(private menuService: MenuService) { }
 
   ngOnInit(): void {
-    this.imagesUrl = ['assets/food1.png', 'assets/food1.png', 'assets/food1.png'];
+    this.imagesUrl = [
+      'assets/maize-meal2.jpg',
+      'assets/chicken.jpg',
+      'assets/eggs.jpg',
+      'assets/goats.jpg',
+      'assets/tomatoes.jpg',
+      'assets/spinach.jpg'
+    ];
 
     this.menuService.getMenu().subscribe(val => {
       this.menuItems = val;
