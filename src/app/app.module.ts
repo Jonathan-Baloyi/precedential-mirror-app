@@ -12,6 +12,9 @@ import { MenuService } from './services/menu.service';
 import { FooterComponent } from './components/core/footer/footer.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AboutComponent } from './components/core/about/about.component';
+import { ContactComponent } from './components/core/contact/contact.component';
+import { ServicesComponent } from './components/core/services/services.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HomeComponent,
     JumbotronComponent,
     ContainerComponent,
-    SlidingCardComponent
+    SlidingCardComponent,
+    AboutComponent,
+    ContactComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

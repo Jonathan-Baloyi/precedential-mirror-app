@@ -17,7 +17,7 @@ export class MenuService {
 
         const servicesMenuItem: IMenu = {
           name : 'Services',
-          link : '/service',
+          link : '/services',
           data: null,
           isCurrent: false,
           isDisabled: false

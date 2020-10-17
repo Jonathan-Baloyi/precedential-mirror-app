@@ -9,9 +9,8 @@ import { IMenu } from 'src/app/models/IMenu';
 })
 export class HomeComponent implements OnInit {
 
-  menuItems: IMenu[] = [];
   public imagesUrl;
-  constructor(private menuService: MenuService) { }
+  constructor() { }
 
   ngOnInit(): void {
     this.imagesUrl = [
@@ -23,9 +22,6 @@ export class HomeComponent implements OnInit {
       'assets/spinach.jpg'
     ];
 
-    this.menuService.getMenu().subscribe(val => {
-      this.menuItems = val;
-    });
   }
 
 }
